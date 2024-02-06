@@ -88,7 +88,7 @@ const AmChartsMap = (props) => {
         if (materialData) {
           const totalWeight =
             materialData?.total_weight ||
-            materialData?.totalWeight ||
+            // materialData?.totalWeight ||
             materialData?.sumMaterialWeight;
 
           const gradient = new am4core.LinearGradient();
