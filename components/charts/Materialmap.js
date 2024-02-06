@@ -83,7 +83,6 @@ const AmChartsMap = (props) => {
         const materialData = highlightCountries?.find(
           (it) => it["abbreviation"] === id
         );
-        console.log({ materialData });
         // if (highlightCountries.includes(id)) {
         if (materialData) {
           const totalWeight =
