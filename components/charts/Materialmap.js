@@ -131,9 +131,9 @@ const AmChartsMap = (props) => {
     colorMaterialMap,
   ]);
 
-  // useEffect(() => {
-  //   setModal(pre => !pre)
-  // }, [activeTab])
+  useEffect(() => {
+    setModal(false)
+  }, [activeTab])
 
   return (
     <>
