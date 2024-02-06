@@ -1,0 +1,45 @@
+{
+  "name": "mosaic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.35",
+    "@amcharts/amcharts4-fonts": "^4.0.1",
+    "@amcharts/amcharts4-geodata": "^4.1.26",
+    "@amcharts/amcharts5": "^5.3.11",
+    "@amcharts/amcharts5-fonts": "^5.0.1",
+    "@amcharts/amcharts5-geodata": "^5.1.0",
+    "@grapecity/activereports-react": "^4.0.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "autoprefixer": "10.4.14",
+    "base-64": "^1.0.0",
+    "chart.js": "^4.2.1",
+    "date-fns": "^2.30.0",
+    "jsonwebtoken": "8.5.1",
+    "next": "13.3.0",
+    "next-auth": "^4.22.0",
+    "next-themes": "^0.2.1",
+    "postcss": "8.4.22",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-datepicker": "^4.15.0",
+    "react-dom": "18.2.0",
+    "react-paginate": "^8.2.0",
+    "react-redux": "^8.0.5",
+    "react-select": "^5.7.3",
+    "react-verification-input": "^3.3.0",
+    "tailwindcss": "3.3.1",
+    "xlsx": "^0.17.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.1.1",
+    "typescript": "5.0.4"
+  }
+}

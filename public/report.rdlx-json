@@ -1,0 +1,770 @@
+{
+    "Name": "multisectionreport1",
+    "Width": "0in",
+    "Layers": [
+        {
+            "Name": "default"
+        }
+    ],
+    "CustomProperties": [
+        {
+            "Name": "DisplayType",
+            "Value": "Page"
+        },
+        {
+            "Name": "SizeType",
+            "Value": "Default"
+        },
+        {
+            "Name": "PaperOrientation",
+            "Value": "Portrait"
+        }
+    ],
+    "Page": {
+        "PageWidth": "8.5in",
+        "PageHeight": "11in",
+        "RightMargin": "0in",
+        "LeftMargin": "0in",
+        "TopMargin": "0in",
+        "BottomMargin": "0in",
+        "Columns": 1,
+        "ColumnSpacing": "0.5in"
+    },
+    "DataSources": [
+        {
+            "Name": "DataSource",
+            "ConnectionProperties": {
+                "DataProvider": "JSONEMBED",
+                "ConnectString": "jsondata=[\\n  {\\n    \"materialGroup\": \"Other\",\\n    \"materialName\": \"Acrylic\",\\n    \"weight\": 123640,\\n    \"percentage\": 24.44299468200779\\n  },\\n  {\\n    \"materialGroup\": \"Other\",\\n    \"materialName\": \"Linen\",\\n    \"weight\": 55430,\\n    \"percentage\": 10.958227072336555\\n  },\\n  {\\n    \"materialGroup\": \"Other\",\\n    \"materialName\": \"Other\",\\n    \"weight\": 240170,\\n    \"percentage\": 47.480378783385724\\n  },\\n  {\\n    \"materialGroup\": \"Other\",\\n    \"materialName\": \"Silk\",\\n    \"weight\": 48130,\\n    \"percentage\": 9.515054464938814\\n  },\\n  {\\n    \"materialGroup\": \"Other\",\\n    \"materialName\": \"Thermoplastics\",\\n    \"weight\": 38460,\\n    \"percentage\": 7.603344997331119\\n  }\\n]"
+            }
+        }
+    ],
+    "ReportSections": [
+        {
+            "Type": "Continuous",
+            "Name": "ContinuousSection1",
+            "Page": {
+                "PageWidth": "8.5in",
+                "PageHeight": "11in",
+                "RightMargin": "1in",
+                "LeftMargin": "1in",
+                "TopMargin": "1in",
+                "BottomMargin": "1in",
+                "Columns": 1,
+                "ColumnSpacing": "0in"
+            },
+            "Width": "6.3575in",
+            "Body": {
+                "Height": "4.8889in",
+                "ReportItems": [
+                    {
+                        "Type": "table",
+                        "Name": "Table1",
+                        "DataSetName": "DataSet",
+                        "TableColumns": [
+                            {
+                                "Width": "1in"
+                            },
+                            {
+                                "Width": "1in"
+                            },
+                            {
+                                "Width": "1in"
+                            },
+                            {
+                                "Width": "1in"
+                            }
+                        ],
+                        "Header": {
+                            "TableRows": [
+                                {
+                                    "Height": "0.25in",
+                                    "TableCells": [
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox1",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "materialGroup",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "TextAlign": "Center"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox2",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "materialName",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "TextAlign": "Center"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox3",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "weight",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "TextAlign": "Center"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox4",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "percentage",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "TextAlign": "Center"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "RepeatOnNewPage": true
+                        },
+                        "Details": {
+                            "TableRows": [
+                                {
+                                    "Height": "0.25in",
+                                    "TableCells": [
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox5",
+                                                "DataElementName": "materialGroup",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!materialGroup.Value",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "Color": "#00bcd4"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox6",
+                                                "DataElementName": "materialName",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!materialName.Value",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox7",
+                                                "DataElementName": "weight",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!weight.Value",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt",
+                                                    "TextAlign": "Center"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        },
+                                        {
+                                            "Item": {
+                                                "Type": "textbox",
+                                                "Name": "TextBox8",
+                                                "DataElementName": "percentage",
+                                                "CanGrow": true,
+                                                "KeepTogether": true,
+                                                "Value": "=Fields!percentage.Value",
+                                                "Style": {
+                                                    "PaddingLeft": "2pt",
+                                                    "PaddingRight": "2pt",
+                                                    "PaddingTop": "2pt",
+                                                    "PaddingBottom": "2pt"
+                                                },
+                                                "Width": "1in",
+                                                "Height": "0.25in"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "Left": "0.3125in",
+                        "Top": "0.7501in",
+                        "Width": "4in",
+                        "Height": "0.5in"
+                    },
+                    {
+                        "Type": "dvchart",
+                        "Name": "Chart1",
+                        "ZIndex": 1,
+                        "DataSetName": "DataSet",
+                        "Style": {
+                            "FontSize": "8pt"
+                        },
+                        "Bar": {
+                            "Width": 1
+                        },
+                        "Header": {
+                            "Style": {
+                                "PaddingLeft": "2pt",
+                                "PaddingRight": "2pt",
+                                "PaddingTop": "12pt",
+                                "PaddingBottom": "12pt"
+                            },
+                            "TextStyle": {
+                                "FontFamily": "Montserrat",
+                                "FontSize": "14pt"
+                            },
+                            "Title": "Percentage By GroupName"
+                        },
+                        "Footer": {
+                            "Style": {
+                                "PaddingLeft": "2pt",
+                                "PaddingRight": "2pt",
+                                "PaddingTop": "2pt",
+                                "PaddingBottom": "4pt"
+                            },
+                            "TextStyle": {
+                                "FontSize": "8pt"
+                            }
+                        },
+                        "Palette": "Custom",
+                        "CustomPalette": [
+                            "MediumTurquoise",
+                            "Gold",
+                            "DeepPink",
+                            "#c7c7c7",
+                            "#bfecb8",
+                            "#c3ebec",
+                            "#ffec9d",
+                            "#ffb1ae",
+                            "#9ebac4",
+                            "#febbf7"
+                        ],
+                        "Legend": {
+                            "Orientation": "Vertical",
+                            "Style": {
+                                "PaddingLeft": "2pt",
+                                "PaddingRight": "2pt",
+                                "PaddingTop": "2pt",
+                                "PaddingBottom": "2pt"
+                            },
+                            "TextStyle": {
+                                "FontSize": "8pt"
+                            },
+                            "TitleStyle": {
+                                "FontSize": "8pt"
+                            }
+                        },
+                        "PlotArea": {
+                            "Axes": [
+                                {
+                                    "Format": "d",
+                                    "Labels": false,
+                                    "LineStyle": {
+                                        "Border": {
+                                            "Color": "LightGray",
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "Plots": [
+                                        "Plot1"
+                                    ],
+                                    "Position": "None",
+                                    "TextStyle": {
+                                        "FontSize": "8pt"
+                                    },
+                                    "Title": "Percentage",
+                                    "TitleStyle": {
+                                        "FontSize": "12pt",
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    }
+                                },
+                                {
+                                    "AxisLine": false,
+                                    "AxisType": "Y",
+                                    "Format": "p0",
+                                    "Labels": false,
+                                    "LineStyle": {
+                                        "Border": {
+                                            "Color": "LightGray",
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "MajorGrid": true,
+                                    "MajorGridStyle": {
+                                        "Border": {
+                                            "Color": "LightGray",
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "MajorTickStyle": {
+                                        "Border": {
+                                            "Color": "LightGray"
+                                        }
+                                    },
+                                    "MinorGridStyle": {
+                                        "Border": {
+                                            "Color": "LightGray"
+                                        }
+                                    },
+                                    "Plots": [
+                                        "Plot1"
+                                    ],
+                                    "Position": "None",
+                                    "Scale": "Percentage",
+                                    "TextStyle": {
+                                        "FontSize": "8pt"
+                                    },
+                                    "TitleStyle": {
+                                        "FontSize": "12pt",
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    }
+                                },
+                                {
+                                    "LabelStyle": {
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    },
+                                    "LineStyle": {
+                                        "Border": {
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "MajorGridStyle": {
+                                        "Border": {
+                                            "Color": "Gray",
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "Plots": [
+                                        "Plot1"
+                                    ],
+                                    "TitleStyle": {
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    }
+                                }
+                            ],
+                            "Legends": [
+                                {
+                                    "Position": "Top",
+                                    "Style": {
+                                        "PaddingLeft": "12pt",
+                                        "PaddingRight": "12pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "12pt"
+                                    },
+                                    "TextStyle": {
+                                        "FontFamily": "Montserrat",
+                                        "FontSize": "9pt",
+                                        "Color": "Gray"
+                                    },
+                                    "TitleStyle": {
+                                        "FontFamily": "Montserrat",
+                                        "FontSize": "8pt"
+                                    }
+                                }
+                            ]
+                        },
+                        "Plots": [
+                            {
+                                "PlotName": "Plot1",
+                                "Encodings": {
+                                    "Values": [
+                                        {
+                                            "Field": {
+                                                "FieldType": "Simple",
+                                                "Value": [
+                                                    "=Fields!percentage.Value"
+                                                ],
+                                                "Captions": [
+                                                    ""
+                                                ]
+                                            },
+                                            "Aggregate": "Sum"
+                                        }
+                                    ],
+                                    "Category": {
+                                        "Field": {
+                                            "FieldType": "Simple"
+                                        }
+                                    },
+                                    "Details": [
+                                        {
+                                            "Field": {
+                                                "FieldType": "Simple",
+                                                "Value": [
+                                                    "=Fields!materialName.Value"
+                                                ],
+                                                "Captions": [
+                                                    ""
+                                                ]
+                                            },
+                                            "Group": "Stack"
+                                        }
+                                    ],
+                                    "Color": {
+                                        "Field": {
+                                            "FieldType": "Simple",
+                                            "Value": [
+                                                "=Fields!materialName.Value"
+                                            ],
+                                            "Captions": [
+                                                ""
+                                            ]
+                                        },
+                                        "Aggregate": "List"
+                                    },
+                                    "Shape": {
+                                        "Field": {
+                                            "FieldType": "Simple"
+                                        }
+                                    },
+                                    "Size": {
+                                        "Field": {
+                                            "FieldType": "Simple"
+                                        }
+                                    }
+                                },
+                                "Config": {
+                                    "AxisMode": "Radial",
+                                    "ClippingMode": "None",
+                                    "InnerRadius": 0.5,
+                                    "LineStyle": {
+                                        "Color": "Black"
+                                    },
+                                    "Opacity": 0.95,
+                                    "Radial": true,
+                                    "Text": {
+                                        "ConnectingLine": {
+                                            "Border": {
+                                                "Color": "LightGray"
+                                            }
+                                        },
+                                        "Offset": 40,
+                                        "OverlappingLabels": "Show",
+                                        "TextPosition": "Inside",
+                                        "Style": {
+                                            "FontFamily": "Montserrat",
+                                            "FontSize": "9pt",
+                                            "Color": "DimGray"
+                                        }
+                                    }
+                                },
+                                "PlotChartType": "Pie",
+                                "PlotChartSubtype": "Stacked"
+                            }
+                        ],
+                        "Left": "3.1527in",
+                        "Top": "1.9444in",
+                        "Width": "3.2048in",
+                        "Height": "2.9236in"
+                    },
+                    {
+                        "Type": "dvchart",
+                        "Name": "Chart2",
+                        "ZIndex": 2,
+                        "DataSetName": "DataSet",
+                        "Style": {
+                            "PaddingLeft": "2pt",
+                            "PaddingRight": "2pt",
+                            "PaddingTop": "2pt",
+                            "PaddingBottom": "2pt"
+                        },
+                        "Bar": {
+                            "Width": 1
+                        },
+                        "Header": {
+                            "Style": {
+                                "PaddingTop": "4pt",
+                                "PaddingBottom": "2pt"
+                            },
+                            "TextStyle": {
+                                "FontWeight": "Bold"
+                            },
+                            "Title": "Percentage"
+                        },
+                        "Footer": {
+                            "Style": {
+                                "PaddingTop": "2pt",
+                                "PaddingBottom": "4pt"
+                            }
+                        },
+                        "Palette": "YellowOrange",
+                        "Legend": {
+                            "Orientation": "Vertical",
+                            "Style": {
+                                "PaddingRight": "10pt",
+                                "PaddingTop": "4pt",
+                                "PaddingBottom": "2pt"
+                            }
+                        },
+                        "PlotArea": {
+                            "Axes": [
+                                {
+                                    "LabelStyle": {
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    },
+                                    "LineStyle": {
+                                        "Border": {
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "MajorGridStyle": {
+                                        "Border": {
+                                            "Color": "Gray",
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "Plots": [
+                                        "Plot 1"
+                                    ],
+                                    "Position": "None",
+                                    "Title": "Category",
+                                    "TitleStyle": {
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    }
+                                },
+                                {
+                                    "AxisType": "Y",
+                                    "Format": "p0",
+                                    "LabelStyle": {
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    },
+                                    "LineStyle": {
+                                        "Border": {
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "MajorGrid": true,
+                                    "MajorGridStyle": {
+                                        "Border": {
+                                            "Color": "Gray",
+                                            "Style": "Solid"
+                                        }
+                                    },
+                                    "Plots": [
+                                        "Plot 1"
+                                    ],
+                                    "Position": "None",
+                                    "Scale": "Percentage",
+                                    "Title": "percentage",
+                                    "TitleStyle": {
+                                        "PaddingLeft": "2pt",
+                                        "PaddingRight": "2pt",
+                                        "PaddingTop": "2pt",
+                                        "PaddingBottom": "2pt"
+                                    }
+                                }
+                            ],
+                            "Legends": [
+                                {
+                                    "Orientation": "Vertical",
+                                    "Style": {
+                                        "PaddingRight": "10pt",
+                                        "PaddingTop": "4pt",
+                                        "PaddingBottom": "2pt"
+                                    }
+                                }
+                            ]
+                        },
+                        "Plots": [
+                            {
+                                "PlotName": "Plot 1",
+                                "Encodings": {
+                                    "Values": [
+                                        {
+                                            "Field": {
+                                                "FieldType": "Simple",
+                                                "Value": [
+                                                    "=Fields!percentage.Value"
+                                                ],
+                                                "Captions": [
+                                                    ""
+                                                ]
+                                            },
+                                            "Aggregate": "Sum"
+                                        }
+                                    ],
+                                    "Category": {
+                                        "Field": {
+                                            "FieldType": "Simple"
+                                        }
+                                    },
+                                    "Details": [
+                                        {
+                                            "Field": {
+                                                "FieldType": "Simple",
+                                                "Value": [
+                                                    "=Fields!materialName.Value"
+                                                ],
+                                                "Captions": [
+                                                    ""
+                                                ]
+                                            },
+                                            "Group": "Stack"
+                                        }
+                                    ],
+                                    "Color": {
+                                        "Field": {
+                                            "FieldType": "Simple",
+                                            "Value": [
+                                                "=Fields!materialName.Value"
+                                            ],
+                                            "Captions": [
+                                                ""
+                                            ]
+                                        }
+                                    },
+                                    "Shape": {
+                                        "Field": {
+                                            "FieldType": "Simple"
+                                        }
+                                    },
+                                    "Size": {
+                                        "Field": {
+                                            "FieldType": "Simple"
+                                        }
+                                    }
+                                },
+                                "Config": {
+                                    "AxisMode": "Radial",
+                                    "InnerRadius": 0.5,
+                                    "Radial": true
+                                },
+                                "PlotChartType": "Pie",
+                                "PlotChartSubtype": "Stacked"
+                            }
+                        ],
+                        "Left": "0.0174in",
+                        "Top": "1.8889in",
+                        "Width": "2.9931in",
+                        "Height": "3in"
+                    },
+                    {
+                        "Type": "textbox",
+                        "Name": "TextBox9",
+                        "ZIndex": 3,
+                        "DataElementName": "TextBox1",
+                        "CanGrow": true,
+                        "KeepTogether": true,
+                        "Value": "Raw Materials\n",
+                        "Style": {
+                            "PaddingLeft": "2pt",
+                            "PaddingRight": "2pt",
+                            "PaddingTop": "2pt",
+                            "PaddingBottom": "2pt"
+                        },
+                        "Left": "0.926cm",
+                        "Top": "0.9cm",
+                        "Width": "2.5cm",
+                        "Height": "0.75cm"
+                    }
+                ]
+            }
+        }
+    ],
+    "DataSets": [
+        {
+            "Name": "DataSet",
+            "Fields": [
+                {
+                    "Name": "materialGroup",
+                    "DataField": "materialGroup"
+                },
+                {
+                    "Name": "materialName",
+                    "DataField": "materialName"
+                },
+                {
+                    "Name": "weight",
+                    "DataField": "weight"
+                },
+                {
+                    "Name": "percentage",
+                    "DataField": "percentage"
+                }
+            ],
+            "Query": {
+                "DataSourceName": "DataSource",
+                "CommandText": "jpath=$.*"
+            },
+            "CaseSensitivity": "Auto",
+            "KanatypeSensitivity": "Auto",
+            "AccentSensitivity": "Auto",
+            "WidthSensitivity": "Auto"
+        }
+    ]
+}
