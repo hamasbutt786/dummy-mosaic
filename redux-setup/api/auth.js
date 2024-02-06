@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
-const base = process.env.NEXT_PUBLIC_BASE_URL
+const base = 'https://dev.api.mosaica.io/'
 export const authProfile = createApi({
     reducerPath: "authProfile",
     baseQuery: fetchBaseQuery({
