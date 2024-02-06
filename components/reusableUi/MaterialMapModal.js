@@ -41,8 +41,8 @@ const MaterialMapModal = (props) => {
       detailsModal?.abbreviation
         ? detailsModal?.abbreviation
         : detailsModal?.avvreviation
-        ? detailsModal?.avvreviation
-        : detailsModal?.country_code,
+          ? detailsModal?.avvreviation
+          : detailsModal?.country_code,
     ];
     // Configure appearance for non-highlighted countries
     const polygonTemplate = polygonSeries.mapPolygons.template;
@@ -52,8 +52,8 @@ const MaterialMapModal = (props) => {
       detailsModal?.abbreviation
         ? detailsModal?.abbreviation
         : detailsModal?.avvreviation
-        ? detailsModal?.avvreviation
-        : detailsModal?.country_code,
+          ? detailsModal?.avvreviation
+          : detailsModal?.country_code,
     ];
     // Apply the same gradient color to the specified countries
     polygonSeries.events.on("ready", () => {
@@ -107,8 +107,7 @@ const MaterialMapModal = (props) => {
     };
   }, [
     detailsModal?.total_weight,
-    detailsModal.totalWeight,
-    detailsModal.sumMaterialWeight,
+    detailsModal?.sumMaterialWeight,
     compName,
   ]);
   return (
@@ -122,11 +121,10 @@ const MaterialMapModal = (props) => {
         />
       ) : (
         <div
-          className={`${
-            compName === "raw-material" || compName === "BCCUs"
-              ? "hidden"
-              : "block"
-          } h-full max-h-[472px] w-full absolute top-0 z-[300] m-auto`}
+          className={`${compName === "raw-material" || compName === "BCCUs"
+            ? "hidden"
+            : "block"
+            } h-full max-h-[472px] w-full absolute top-0 z-[300] m-auto`}
         >
           <div id="crypto-modal" tabIndex="-1" aria-hidden="true" className="">
             <div className="relative w-full min-h-[492px]">
@@ -216,15 +214,13 @@ const MaterialMapModal = (props) => {
                                       key={id}
                                       className="flex-1 cursor-pointer md:text-base font-medium whitespace-nowrap"
                                     >
-                                      {`${
-                                        id + 1 < 10 ? "0" + (id + 1) : id + 1
-                                      } : ${item}`}
+                                      {`${id + 1 < 10 ? "0" + (id + 1) : id + 1
+                                        } : ${item}`}
                                       <span
-                                        className={`cursor-pointer ${
-                                          id == showDepartment
-                                            ? "flex"
-                                            : "hidden"
-                                        } pl-2 w-full cursor-pointer md:text-base font-medium whitespace-nowrap`}
+                                        className={`cursor-pointer ${id == showDepartment
+                                          ? "flex"
+                                          : "hidden"
+                                          } pl-2 w-full cursor-pointer md:text-base font-medium whitespace-nowrap`}
                                       >
                                         {`- Total weight: ${Math?.round(
                                           item.totalWeight
